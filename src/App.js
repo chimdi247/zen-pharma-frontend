@@ -24,13 +24,13 @@ PrivateRoute.propTypes = {
 
 function App() {
   return (
-    <AuthProvider>
+   
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/" element={
-          <PrivateRoute>
+         
             <Layout />
-          </PrivateRoute>
+         
         }>
           <Route index element={<Dashboard />} />
           <Route path="drugs" element={<DrugCatalog />} />
@@ -42,7 +42,7 @@ function App() {
           <Route path="reports" element={<Reports />} />
         </Route>
       </Routes>
-    </AuthProvider>
+    
   );
 }
 
