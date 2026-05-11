@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Routes, Route, Navigate } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import Dashboard from './pages/Dashboard';
 import DrugCatalog from './pages/DrugCatalog';
@@ -18,9 +18,9 @@ import Login from './pages/Login';
   //return token ? children : <Navigate to="/login" />;
 //}
 
-PrivateRoute.propTypes = {
-  children: PropTypes.node.isRequired,
-};
+//PrivateRoute.propTypes = {
+  //children: PropTypes.node.isRequired,
+//};
 
 function App() {
   return (
